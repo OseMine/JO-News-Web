@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+
+}
+
+pre {
+    margin-top: 100px;
+    text-align: center;
+    color: black;
+    font: small-caption;
+    font-size: 15px;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+    text-align: right;
+}
+

@@ -1,0 +1,353 @@
+:root {
+  --black: #000;
+  --white: #FFF;
+  --orange: #FF5858;
+  --navback: #323232;
+  --warning: rgba(255, 0, 0, 0.582);
+  --title: rgba(0, 0, 0, 0.658);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+header {
+  background-color: #222;
+}
+header .container {
+  position: relative;
+  max-width: 960px;
+  padding: 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .brand h2 {
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 900;
+}
+header .container .brand h2 span {
+  color: #FF5858;
+  font-weight: 400;
+}
+header .container .mobile-nav {
+  display: none;
+}
+header .container .mobile-nav .open-menu {
+  color: #FFF;
+  text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+  header .container .mobile-nav {
+    display: block;
+  }
+}
+header .container .navbar .menu {
+  display: flex;
+  list-style-type: none;
+}
+header .container .navbar .menu .menu-item {
+  position: relative;
+}
+header .container .navbar .menu .menu-item a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+header .container .navbar .menu .menu-item a:hover {
+  color: #FF5858;
+  background-color: #323232;
+}
+header .container .navbar .menu .menu-item.has-sub-menu > a {
+  position: relative;
+  padding-right: 35px;
+}
+header .container .navbar .menu .menu-item.has-sub-menu > a:after {
+  content: "+";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+header .container .navbar .menu .menu-item.has-sub-menu > a:hover:after {
+  color: #FF5858;
+}
+header .container .navbar .menu .menu-item.has-sub-menu .sub-menu {
+  position: absolute;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(-200px);
+  pointer-events: none;
+  transition: 0.4s ease-out;
+  min-width: 100%;
+  width: max-content;
+  background-color: #222;
+  list-style-type: none;
+}
+header .container .navbar .menu .menu-item.has-sub-menu .sub-menu .menu-item {
+  width: 100%;
+}
+header .container .navbar .menu .menu-item.has-sub-menu:hover > .sub-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+header .container .navbar .menu .menu-item.has-sub-menu:hover > .sub-menu .sub-menu {
+  top: 0;
+  right: 100%;
+}
+header .container .navbar .close-menu {
+  display: none;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  header .container .navbar .close-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .container .navbar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 999;
+    background-color: #222;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s ease-out;
+  }
+  @media screen and (min-width:450px) {
+    
+  }
+  header .container .navbar.is-active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  header .container .navbar .menu {
+    flex-direction: column;
+  }
+  header .container .navbar .menu .has-sub-menu > .sub-menu {
+    display: none;
+    position: relative;
+  }
+  header .container .navbar .menu .has-sub-menu > .sub-menu .sub-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  header .container .navbar .menu .has-sub-menu:hover > .sub-menu {
+    display: block;
+  }
+}
+
+main section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+main section h1 {
+  color: #666;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main section .image-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+main section .image-wrap .image {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+}
+main section .content-wrap {
+  display: block;
+  max-width: 768px;
+  margin: 0 auto;
+}
+main section .content-wrap p {
+  color: #676767;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+#Video {
+  text-align: center;
+  padding-top: 70px;
+}
+
+#Einleitung {
+  font-family: "montserrat", sans-serif;
+  font-size: 20;
+  position: relative;
+
+}
+
+#L1 {
+  color: black;
+  font-family: "montserrat", sans-serif;
+  text-align: left;
+    text-align: center;
+}
+
+#T1 {
+  color: black;
+  font-family: "montserrat", sans-serif;
+    text-align: center;
+
+}
+
+#Madeby {
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  color: black;
+
+}
+
+#Weather {
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  color: black;
+  padding-top: 70px;
+}
+
+#F1 {
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  padding-top: 70px;
+  color: var(--black);
+  font-size: x-large;
+  cursor:text
+
+}
+
+#dick {
+  font-style: oblique;
+  font-weight: 1000;
+
+}
+
+#dicker {
+  font-style: oblique;
+  font-weight: 9999;
+
+}
+
+
+#in_edit {
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  font-size: xx-large;
+  color: var(--warning);
+}
+
+#under-text {
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+
+}
+
+#email_i {
+  text-align: center;
+  padding-top: 10px;
+  font-family: "montserrat", sans-serif;
+
+}
+
+#title_i {
+  text-align: center;
+  padding-top: 2.5px;
+  color: var(--title);
+  font-family: "montserrat", sans-serif;
+  font-size: x-large;
+}
+
+#web_i {
+  text-align: center;
+  padding-top: 5px;
+  font-family: "montserrat", sans-serif;
+}
+
+#redaktion-title_i {
+  text-align: center;
+  padding-top: 7.5px;
+  font-family: "montserrat", sans-serif;
+}
+
+#redaktion_i {
+  text-align: center;
+  padding-top: 10px;
+  font-family: "montserrat", sans-serif;
+}
+
+#design-title_i {
+  text-align: center;
+  padding-top: 12.5px;
+  font-family: "montserrat", sans-serif;
+}
+
+#design_i {
+  text-align: center;
+  padding-top: 15px;
+  font-family: "montserrat", sans-serif;
+}
+
+#texte-title_i {
+  text-align: center;
+  padding-top: 17.5px;
+  font-family: "montserrat", sans-serif;
+}
+
+#texte_i {
+  text-align: center;
+  padding-top: 20 px;
+  font-family: "montserrat", sans-serif;
+}
+
+#centerer {
+  text-align: center;
+
+}
+
+#font {
+  font-family: "montserrat", sans-serif;
+
+}
+
+#-- {
+  font-weight:900
+}
+
+#Achtung {
+  font-family: "montserrat", sans-serif;
+  color: var(--warning);
+
+}
+
+.Lt {
+  font-size: 25px;
+  font-family: "montserrat", sans-serif;
+}
